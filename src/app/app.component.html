@@ -1,0 +1,11 @@
+<table>
+  <tr *ngFor="let item of Board; let i = index">
+    <td *ngFor="let item of Board[i]; let j = index">
+      <app-tile
+        [row]="i"
+        [col]="j"
+        [currentPlayer]="Board[i][j]"
+      ></app-tile>
+    </td>
+  </tr>
+</table>
